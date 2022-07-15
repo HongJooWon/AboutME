@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Layout from '../components/Layout';
 import 'bootstrap/dist/css/bootstrap.css';
 import Head from 'next/head';
@@ -18,3 +19,12 @@ export default function MyApp({ Component, pageProps }) {
     </Layout>
   );
 }
+=======
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+>>>>>>> 288070b483ae06d2dbad75e6737f5c4615d39fd8
