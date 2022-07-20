@@ -27,8 +27,8 @@ export default function Chest() {
     <ChestSection>
         <h2>홍주원(弘柱元)</h2>
         <ChestBox>
-        <div ><Image src={randomPic} alt="" width={300} height={300}/></div>
-        <div >...</div>
+        <div><Image src={randomPic} alt="" width={300} height={300}/></div>
+        <div>...</div>
         </ChestBox>
     </ChestSection>
   );
