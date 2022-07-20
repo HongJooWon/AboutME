@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import Image from "next/image";
-import randomPic from '../public/1.jpg';
 import { useRouter } from 'next/router';
 import styled from "styled-components";
 
