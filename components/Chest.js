@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.css';
 import Image from "next/image";
 import randomPic from '../public/fff.png';

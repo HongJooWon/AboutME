@@ -7,7 +7,7 @@ const TopSection = styled.div`
   background-color: rgb(0, 0, 0);
   width: 100%;
   position: relative;
-  height: calc(100vh - 54px);
+  height: calc(100vh);
 `;
 
 const MovieBox = styled.video`
@@ -44,7 +44,7 @@ export default function Top() {
       </MovieBox>
       <IntroBox>
         <p>안녕하세요</p>
-        <p>이 웹사이트는 제 첫 웹어플리케이션입니다 아시겠죠</p>
+        <p>이 웹사이트는 제 첫 웹어플리케이션입니다</p>
       </IntroBox>
         {/* <Image src={randomPic} alt="" width={500} height={800}/> */}
     </TopSection>

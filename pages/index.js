@@ -1,10 +1,13 @@
 import Seo from '../components/Seo';
+import Layout from '../components/Layout';
+import NavBar from '../components/NavBar';
 
 export default function Hello() {
   return (
-    <div>
+    <>
       <Seo title='Home' />
-      <h1>Hello HI</h1>
-    </div>
+      <NavBar />
+      <Layout />
+    </>
   );
 }
