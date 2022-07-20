@@ -40,7 +40,7 @@ export default function Top() {
   return (
     <TopSection>
       <MovieBox autoPlay muted loop>
-        <source src="/section1.mov" type="video/mp4"/>
+        <source src="https://res.cloudinary.com/dhkrgqqaf/video/upload/v1658291682/ex1/section1_1_e67sjr.mov" type="video/mp4"/>
       </MovieBox>
       <IntroBox>
         <p>안녕하세요</p>
