@@ -15,8 +15,18 @@ const ChestSection = styled.div`
 const ChestBox = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 100px 24px;
+    padding: 90px 24px;
     align-items: center;
+`;
+
+const Profile = styled.div`
+    width: 50%;
+    margin-left: 40px;
+
+`;
+
+const Div = styled.div`
+    padding-top: 16%;
 `;
 
 export default function Chest() {
@@ -24,10 +34,16 @@ export default function Chest() {
   console.log(router);
   return (
     <ChestSection>
-        <h2>홍주원(弘柱元)</h2>
+        <div className='text-2xl font-semibold'>Juwon Hong</div>
         <ChestBox>
-          <Image src={randomPic} alt="" width={300} height={300}/>
-          <p>HI hello</p>
+          <div className='d-flex justify-content-center'>
+            <Image src={randomPic} alt="" width={300} height={300}/>
+          <Profile>
+            <Div>Handong Global University</Div>
+            <Div>Computer Science & Global Entrepreneurship</Div>
+            <Div>Web Noob</Div>
+          </Profile>
+          </div>
         </ChestBox>
     </ChestSection>
   );

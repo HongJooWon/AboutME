@@ -21,17 +21,13 @@ const IntroBox = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 0px;
-  left: 0px;
   width: 100%;
   height: 100%;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: end;
   justify-content: flex-end;
-  padding: 0px 24px 280px;
   color: rgb(255, 255, 255);
-  font-size: 20px
+  font-size: 20px;
+  bottom: 42%;
 `;
 
 export default function Top() {
@@ -40,7 +36,7 @@ export default function Top() {
   return (
     <TopSection>
       <MovieBox autoPlay muted loop>
-        <source src="https://res.cloudinary.com/dhkrgqqaf/video/upload/v1658291682/ex1/section1_1_e67sjr.mov" type="video/mp4"/>
+        <source src="https://res.cloudinary.com/dhkrgqqaf/video/upload/v1658366594/ex1/Laptop_-_1625_wmi3c6.mp4" type="video/mp4"/>
       </MovieBox>
       <IntroBox>
         <p>안녕하세요</p>

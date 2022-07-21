@@ -1,47 +1,68 @@
 import Link from 'next/link';
-import styled from "styled-components";
+import styled from '@emotion/styled'
 import { useRouter } from 'next/router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+
 
 const HeadContationer = styled.header`
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  position: fixed;
-  z-index: 1100;
-  top: 0px;
-  left: auto;
-  right: 0px;
-  background-color: rgba(0, 0, 0, 0.87);
-  color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: fixed;
+    z-index: 1100;
+    top: 0px;
+    left: auto;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: rgba(0, 0, 0, 0.87);
 `;
 
-const NavContainer = styled.div`
-  position: relative;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  min-height: 56px;
-  background-color: rgb(17, 18, 32);
+const NavContainer = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+    min-height : 56px;
+    a:hover {
+      color: white;
+    }
+`;
+
+const List = styled.ul`
+    list-style: none;
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding-left: 0;
+`;
+
+const Li = styled.li`
+    padding: 0px 12px;
+    margin: 0;
+    text-decoration: none;
 `;
 
 export default function NavBar() {
   const router = useRouter();
   console.log(router);
   return (
-    <HeadContationer>
+    <HeadContationer className='text-white'>
       <NavContainer>
-      <Link href='/'>
-        <a>Home Sweet Home </a>
-      </Link>
-      <Link href='/about'>
-        <a>About this</a>
-      </Link>
+      <a href='/'>
+        <FontAwesomeIcon icon={faHouse} size='2x'/>
+      </a>
+      <div className='pl-14'>About this</div>
+      <List>
+        <Li><a href='https://github.com/hongju2024'><FontAwesomeIcon icon={faGithub} size='2x'/></a></Li>
+        <Li><a href="mailto:juwon2024@gmail.com" title="Send an Email"><FontAwesomeIcon icon={faEnvelope} size='2x'/></a></Li>
+      </List>
       </NavContainer>
     </HeadContationer>
   );
