@@ -42,8 +42,6 @@ export default function Top() {
         <p>안녕하세요</p>
         <p>이 웹사이트는 제 첫 웹어플리케이션입니다</p>
       </IntroBox>
-        {/* <Image src={randomPic} alt="" width={500} height={800}/> */}
     </TopSection>
-    //https://drive.google.com/file/d/1B01PaLFETjxjQ8yJAGdF9hv6oWx26Gq40g/view?usp=sharing
   );
 }
