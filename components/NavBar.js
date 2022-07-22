@@ -55,12 +55,12 @@ export default function NavBar() {
   return (
     <HeadContationer className='text-white'>
       <NavContainer>
-      <Link href="/">
+      <Link href="/" passHref>
         <FontAwesomeIcon icon={faHouse} size='2x'/>
       </Link>
       <div className='pl-14'>About this</div>
       <List>
-        <Li><Link href='https://github.com/hongju2024'><FontAwesomeIcon icon={faGithub} size='2x'/></Link></Li>
+        <Li><Link href='https://github.com/hongju2024' passHref><FontAwesomeIcon icon={faGithub} size='2x'/></Link></Li>
         <Li><a href="mailto:juwon2024@gmail.com" title="Send an Email"><FontAwesomeIcon icon={faEnvelope} size='2x'/></a></Li>
       </List>
       </NavContainer>
