@@ -30,9 +30,6 @@ const NavContainer = styled.nav`
     align-items: center;
     padding: 0px 12px;
     min-height : 56px;
-    a:hover {
-      color: white;
-    }
 `;
 
 const List = styled.ul`
@@ -61,7 +58,7 @@ export default function NavBar() {
       <div className='pl-14'>About this</div>
       <List>
         <Li><Link href='https://github.com/hongju2024' passHref><FontAwesomeIcon icon={faGithub} size='2x'/></Link></Li>
-        <Li><a href="mailto:juwon2024@gmail.com" title="Send an Email"><FontAwesomeIcon icon={faEnvelope} size='2x'/></a></Li>
+        <Li><Link href="mailto:juwon2024@gmail.com" title="Send an Email"><FontAwesomeIcon icon={faEnvelope} size='2x'/></Link></Li>
       </List>
       </NavContainer>
     </HeadContationer>
