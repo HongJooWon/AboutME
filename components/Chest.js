@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Image from "next/image";
 import randomPic from '../public/fff.png';
 import { useRouter } from 'next/router';
-import styled from "styled-components";
+import styled from '@emotion/styled'
 
 const ChestSection = styled.div`
     display: flex;

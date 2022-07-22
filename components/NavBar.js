@@ -55,9 +55,9 @@ export default function NavBar() {
   return (
     <HeadContationer className='text-white'>
       <NavContainer>
-      <a href='/'>
+      <Link href='/'>
         <FontAwesomeIcon icon={faHouse} size='2x'/>
-      </a>
+      </Link>
       <div className='pl-14'>About this</div>
       <List>
         <Li><a href='https://github.com/hongju2024'><FontAwesomeIcon icon={faGithub} size='2x'/></a></Li>

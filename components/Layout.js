@@ -1,4 +1,3 @@
-import NavBar from './NavBar';
 import Top from './Top';
 import Chest from './Chest';
 
