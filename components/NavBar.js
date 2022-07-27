@@ -30,12 +30,12 @@ const NavContainer = styled.nav`
     align-items: center;
     padding: 0px 12px;
     min-height : 56px;
+    color: rgb(255, 255, 255);
 `;
 
 const List = styled.ul`
     list-style: none;
     display: flex;
-    color: rgb(255, 255, 255);
     margin: 0;
     padding-left: 0;
 `;
@@ -50,9 +50,9 @@ export default function NavBar() {
   const router = useRouter();
   console.log(router);
   return (
-    <HeadContationer className='text-white'>
+    <HeadContationer className=''>
       <NavContainer>
-      <Link href="/" passHref>
+      <Link href="/">
         <FontAwesomeIcon icon={faHouse} size='2x'/>
       </Link>
       <div className='pl-14'>About this</div>
