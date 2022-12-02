@@ -18,6 +18,7 @@ const MovieBox = styled.video`
 `;
 
 const IntroBox = styled.div`
+  font-family: 'Noto-Sans-Kr';
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -39,8 +40,8 @@ export default function Top() {
         <source src="https://res.cloudinary.com/dhkrgqqaf/video/upload/v1658366594/ex1/Laptop_-_1625_wmi3c6.mp4" type="video/mp4"/>
       </MovieBox>
       <IntroBox>
-        <p>안녕하세요</p>
-        <p>이 웹사이트는 제 첫 웹어플리케이션입니다</p>
+        <p>Welcome to My Website</p>
+        <p>This is an introduction about me!</p>
       </IntroBox>
     </TopSection>
   );

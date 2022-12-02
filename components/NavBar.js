@@ -22,6 +22,7 @@ const HeadContationer = styled.header`
     right: 0px;
     background-color: rgba(0, 0, 0, 0.87);
     color: rgba(0, 0, 0, 0.87);
+    font-family: "Noto-Sans-KR-Black";
 `;
 
 const NavContainer = styled.nav`

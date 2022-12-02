@@ -1,5 +1,5 @@
 import Image from "next/image";
-import randomPic from '../public/fff.png';
+import randomPic from '../public/Frodocgi.webp';
 import { useRouter } from 'next/router';
 import styled from '@emotion/styled'
 
@@ -9,6 +9,7 @@ const ChestSection = styled.div`
     padding: 100px 24px;
     align-items: center;
     height: calc(100vh - 58px);
+    font-family: "Noto-Sans-KR-Black";
 `;
 
 const ChestBox = styled.div`
@@ -25,8 +26,9 @@ const Profile = styled.div`
 `;
 
 const Div = styled.div`
+    font-family: "Noto-Sans-KR";
     width : 60%;
-    padding-top: 15%;
+    padding-top: 10%;
 `;
 
 export default function Chest() {
@@ -40,7 +42,8 @@ export default function Chest() {
             <Profile>
               <Div>Handong Global University</Div>
               <Div>Computer Science & Global Entrepreneurship</Div>
-              <Div>Web Noob</Div>
+              <Div>A Learning Hobbit</Div>
+              <Div>Tennis Player</Div>
             </Profile>
         </ChestBox>
     </ChestSection>
